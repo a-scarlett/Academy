@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="mobile.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" />
+  <title>Music_group_mobile</title>
+</head>
+<body>
+<div class="mobile">
+  <div class="logo">
+    <img class="logo-muse-1-icon1" loading="lazy" alt="" src="./images/Logo.png" />
+  </div>
+  <section class="hero">
+    <div class="hero-section1">
+      <h3 class="muse-group-frontend1">Muse Group Frontend Academy</h3>
+      <div class="our-academy-offers1">Our academy offers a transformative learning experience designed to empower you with the skills and knowledge needed to succeed in the ever-evolving field of frontend development.</div>
+      <img class="image-holder-icon1" loading="lazy" alt="" src="./images/image-holder-mobile.png" />
+      <div class="are-you-ready1">Are you ready to turn your passion for technology into a thriving career?</div>
+      <div class="email-signup">
+        <div class="input1">
+          <div class="border-group">
+            <label>
+              <input type="text" class="email1" placeholder="Email" />
+            </label>
+          </div>
+        </div>
+        <button class="button5">
+          <span class="read-more5">Join</span>
+          <span class="input-icon">
+            <img class="caretright-icon5" alt="" src="./images/CaretRight.svg" />
+          </span>
+        </button>
+        <script>
+          const emailInput = document.querySelector('.email1');
+          const joinButton = document.querySelector('.button5');
+
+          function validateEmail(email) {
+            // A simple email validation regex pattern
+            const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return pattern.test(email);
+          }
+
+          function handleJoin() {
+            const email = emailInput.value.trim();
+            if (validateEmail(email)) {
+              alert('Welcome to the team!');
+            } else {
+              alert('Email is invalid');
+            }
+          }
+
+          joinButton.addEventListener('click', handleJoin);
+          emailInput.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+              handleJoin();
+            }
+          });
+        </script>
+      </div>
+    </div>
+  </section>
+  <section class="products">
+    <div class="our-products-parent">
+      <h3 class="our-products1">Our products</h3>
+      <div class="card4">
+        <div class="card-image"></div>
+        <div class="card-info">
+          <div class="title-subtitle4">
+            <div class="write-your-title4">Ultimate Guitar</div>
+            <div class="add-a-brief4">The best platform for music makers to play songs they love. Home to the world's largest music community.</div>
+          </div>
+          <button class="button6">
+            <span class="read-more6">Read more</span>
+            <span class="caretright-wrapper2">
+              <img class="caretright-icon6" loading="lazy" alt="" src="./images/Arrow.svg" />
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="card4">
+        <div class="card-image1"></div>
+        <div class="card-info">
+          <div class="title-subtitle4">
+            <div class="write-your-title4">MuseScore</div>
+            <div class="add-a-brief4">Create, play back, and print sheet music with free open source notation software.</div>
+          </div>
+          <button class="button6">
+            <span class="read-more6">Read more</span>
+            <span class="caretright-wrapper2">
+              <img class="caretright-icon6" loading="lazy" alt="" src="./images/Arrow.svg" />
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="card4">
+        <div class="card-image2"></div>
+        <div class="card-info">
+          <div class="title-subtitle4">
+            <div class="write-your-title4">audio.com</div>
+            <div class="add-a-brief4">The easiest way to share any sound online.</div>
+          </div>
+          <button class="button6">
+            <span class="read-more6">Read more</span>
+            <span class="caretright-wrapper2">
+              <img class="caretright-icon6" loading="lazy" alt="" src="./images/Arrow.svg" />
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="card4">
+        <div class="card-image3"></div>
+        <div class="card-info">
+          <div class="title-subtitle4">
+            <div class="write-your-title4">Audacity</div>
+            <div class="add-a-brief4">The world's most popular audio editing and recording app.</div>
+          </div>
+          <button class="button6">
+            <span class="read-more6">Read more</span>
+            <span class="caretright-wrapper2">
+              <img class="caretright-icon6" loading="lazy" alt="" src="./images/Arrow.svg" />
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="social">
+    <div class="social-icons">
+      <img class="socials-icon4" loading="lazy" alt="" src="./images/Socials.svg" id="socialsIcon" />
+      <img class="socials-icon5" loading="lazy" alt="" src="./images/Telegram.svg" id="socialsIcon1" />
+      <img class="socials-icon6" loading="lazy" alt="" src="./images/LinkedIn.svg" id="socialsIcon2" />
+      <img class="socials-icon7" loading="lazy" alt="" src="./images/facebook.svg" id="socialsIcon3" />
+    </div>
+  </div>
+  <section class="community">
+    <div class="youre-not-just1">You're not just a student - you're part of a vibrant community of like-minded individuals united by a passion for frontend development. Collaborate, innovate, and grow alongside fellow learners and industry professionals as you embark on this exciting journey together.</div>
+  </section>
+  <div class="footer1">
+    <div class="footer-links">
+      <a class="help-center1" href="https://support.animaapp.com/en/" target="_blank">Help Center</a>
+      <a class="privacy-policy1" href="https://forum.animaapp.com/privacy" target="_blank">Privacy Policy</a>
+      <a class="terms-of-service1" href="https://forum.animaapp.com/tos" target="_blank">Terms of Service</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
