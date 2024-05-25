@@ -8,6 +8,22 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" />
   <title>Music_group_mobile</title>
+  <script>
+    function getWindowWidth() {
+      return Math.max(
+              window.screen.width,
+              window.innerWidth
+      );
+    }
+
+    const mobileMaxWidth = 768;
+
+    if (getWindowWidth() < mobileMaxWidth) {
+      window.location.replace('mobile.html');
+    } else {
+      window.location.replace('index.html');
+    }
+  </script>
 </head>
 <body>
 <div class="mobile">

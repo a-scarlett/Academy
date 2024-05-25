@@ -18,7 +18,7 @@
 
         const mobileMaxWidth = 768;
 
-        if (getWindowWidth() <= mobileMaxWidth) {
+        if (getWindowWidth() < mobileMaxWidth) {
             window.location.replace('mobile.html');
         } else {
             window.location.replace('index.html');
